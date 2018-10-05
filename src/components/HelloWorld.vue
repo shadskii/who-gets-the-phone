@@ -55,7 +55,7 @@ export default {
     return {
       contenders: [],
       textField: '',
-      repeat: 25,
+      repeat: 20 + Math.floor(Math.random() * 50),
       count: 0
     }
   },
