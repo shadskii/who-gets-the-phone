@@ -73,7 +73,7 @@ export default {
       let time = 500;
       this.count =0;
       let interval = setInterval(this.shuffleContenders, time);
-      setTimeout(()=> clearInterval(interval),time *this.repeat);
+      setTimeout(()=> clearInterval(interval),time *this.repeat+1);
     }
   }
 }
@@ -82,7 +82,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .flip-list-move {
-  transition: transform 1s;
+  transition: transform 0.5s;
 }
 h3 {
   margin: 40px 0 0;
