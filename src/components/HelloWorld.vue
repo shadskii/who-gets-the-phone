@@ -30,7 +30,7 @@
         <v-flex xs10>
           <transition-group name="flip-list">
             <v-flex v-for="con in contenders" :key="con" xs12>
-              <v-card :color="(count===repeat && contenders.indexOf(con) === 0) ? 'success' : ''">
+              <v-card :color="(count>=repeat && contenders.indexOf(con) === 0) ? 'success' : ''">
                 <v-card-title>
                   <h1> {{con}} </h1>
                 </v-card-title>
